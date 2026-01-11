@@ -1,5 +1,5 @@
 function unlock() {
-  const correctCode = "1205"; // CHANGE THIS
+  const correctCode = "0503"; 
   const input = document.getElementById("codeInput").value;
 
   if (input === correctCode) {
@@ -8,4 +8,5 @@ function unlock() {
   } else {
     document.getElementById("error").style.display = "block";
   }
+
 }
