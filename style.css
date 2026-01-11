@@ -156,3 +156,94 @@ footer {
   50% { box-shadow: 0 0 30px #e6b3ff; }
   100% { box-shadow: 0 0 10px #f3c4ff; }
 }
+
+/* ✨ Unicorn Sparkles */
+.gallery.magical {
+  background: radial-gradient(circle, #fdf6ff, #f3e8ff, #e6d9ff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.music-player {
+  margin-bottom: 30px;
+}
+
+.cake-container {
+  position: relative;
+  width: 380px;
+  height: 380px;
+  margin: auto;
+}
+
+.cake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  background: white;
+  padding: 30px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  animation: glow 4s ease-in-out infinite;
+}
+
+.cake p {
+  font-size: 16px;
+  margin-top: 6px;
+  color: #8b6fcf;
+  font-family: 'Playfair Display', serif;
+}
+
+/* 📸 Orbit + Sparkles */
+.photo-orbit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 380px;
+  height: 380px;
+  transform: translate(-50%, -50%);
+  animation: rotateOrbit 30s linear infinite;
+}
+
+.photo-orbit .photo {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+  opacity: 1;
+}
+
+/* 🍬 16‑Position Circle */
+.photo-orbit .photo:nth-child(1) { top: 0%; left: 50%; transform: translate(-50%, -50%); }
+.photo-orbit .photo:nth-child(2) { top: 15%; left: 85%; }
+.photo-orbit .photo:nth-child(3) { top: 35%; left: 97%; }
+.photo-orbit .photo:nth-child(4) { top: 60%; left: 97%; }
+.photo-orbit .photo:nth-child(5) { top: 80%; left: 85%; }
+.photo-orbit .photo:nth-child(6) { top: 97%; left: 60%; }
+.photo-orbit .photo:nth-child(7) { top: 97%; left: 35%; }
+.photo-orbit .photo:nth-child(8) { top: 80%; left: 15%; }
+.photo-orbit .photo:nth-child(9) { top: 60%; left: 3%; }
+.photo-orbit .photo:nth-child(10){ top: 35%; left: 3%; }
+.photo-orbit .photo:nth-child(11){ top: 15%; left: 15%; }
+.photo-orbit .photo:nth-child(12){ top: 0%; left: 35%; }
+.photo-orbit .photo:nth-child(13){ top: 0%; left: 60%; }
+.photo-orbit .photo:nth-child(14){ top: 15%; left: 75%; }
+.photo-orbit .photo:nth-child(15){ top: 35%; left: 85%; }
+.photo-orbit .photo:nth-child(16){ top: 60%; left: 85%; }
+
+/* 🌟 Orbit Animation */
+@keyframes rotateOrbit {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to   { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* 🧚 Glow */
+@keyframes glow {
+  0% { box-shadow: 0 0 12px #f3c4ff; }
+  50% { box-shadow: 0 0 40px #e6b3ff; }
+  100% { box-shadow: 0 0 12px #f3c4ff; }
+}
