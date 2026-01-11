@@ -66,3 +66,82 @@ footer {
   padding: 20px;
   font-size: 14px;
 }
+
+/* 🌸 Unicorn Theme */
+.magical {
+  background: linear-gradient(180deg, #fff6fb, #f3e8ff);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.magical h2 {
+  font-family: 'Playfair Display', serif;
+  color: #9b6fcf;
+  margin-bottom: 40px;
+}
+
+/* 🎂 Cake Area */
+.cake-container {
+  position: relative;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+}
+
+.cake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 64px;
+  background: white;
+  padding: 25px;
+  border-radius: 50%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  animation: glow 3s ease-in-out infinite;
+}
+
+.cake p {
+  font-size: 14px;
+  margin-top: 8px;
+  color: #777;
+}
+
+/* 📸 Floating Photos */
+.photo {
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  opacity: 0;
+  animation: fadeFloat 1.5s forwards;
+}
+
+/* Positioning */
+.p1 { top: 0; left: 120px; animation-delay: 0.3s; }
+.p2 { top: 50px; right: 0; animation-delay: 0.6s; }
+.p3 { bottom: 50px; right: 0; animation-delay: 0.9s; }
+.p4 { bottom: 0; left: 120px; animation-delay: 1.2s; }
+.p5 { bottom: 50px; left: 0; animation-delay: 1.5s; }
+.p6 { top: 50px; left: 0; animation-delay: 1.8s; }
+
+/* ✨ Animations */
+@keyframes fadeFloat {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #f3c4ff; }
+  50% { box-shadow: 0 0 30px #e6b3ff; }
+  100% { box-shadow: 0 0 10px #f3c4ff; }
+}
