@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #fff6f8;
+  color: #444;
+}
+
+#lock-screen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#lock-screen input {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#lock-screen button {
+  padding: 10px 20px;
+  background: #e8a6b0;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#error {
+  color: red;
+  display: none;
+}
+
+#content {
+  display: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.gallery, .love, .letter {
+  padding: 40px 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.photos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.photos img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
