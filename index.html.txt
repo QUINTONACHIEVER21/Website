@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>For You ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="fade-in">
+
+  <div class="center">
+    <h1>✨ A Little Magic Awaits ✨</h1>
+    <p>Soft. Romantic. Just like you.</p>
+
+    <a href="gallery.html" class="magic-button">
+      Enter the Magic 🦄🎂
+    </a>
+  </div>
+
+</body>
+</html>
