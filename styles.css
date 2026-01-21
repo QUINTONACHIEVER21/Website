@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(120deg, #ffe6f7, #e6f2ff);
+  text-align: center;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.center {
+  margin-top: 30vh;
+}
+
+.magic-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #ffb6e6;
+  color: white;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(255,182,230,0.6);
+}
+
+.orbit-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 100px auto;
+}
+
+.cake {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  animation: glow 3s infinite;
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px pink; }
+  50% { text-shadow: 0 0 25px lavender; }
+  100% { text-shadow: 0 0 10px pink; }
+}
+
+.orbit {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg) translateX(180px) rotate(0deg); }
+  to { transform: rotate(360deg) translateX(180px) rotate(-360deg); }
+}
+
+/* Offset photos */
+.p1 { animation-delay: 0s; }
+.p2 { animation-delay: -1.2s; }
+.p3 { animation-delay: -2.4s; }
+.p4 { animation-delay: -3.6s; }
+/* continue until p16 */
+
+.message-box {
+  margin-top: 20vh;
+  padding: 40px;
+}
